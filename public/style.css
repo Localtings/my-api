@@ -1,0 +1,147 @@
+:root {
+    --hoverborder: #007bffaa;
+    --lightblue: #cfd2ff;
+    --yellow: #ffe46a;
+    --lightpurple: #6866ba;
+    --purpleblue: #4f4dbe;
+    --darkpurpleblue: #3c3a8f;
+    --whitegrey: #b8b8b8;
+    --grey: #767676;
+    --darkgrey: #434343;
+    --darkergrey: #1a1a1a;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--darkergrey);
+}
+
+#upper {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#purchase {
+    margin-top: 5rem;
+}
+
+#title {
+    font-size: 4rem;
+    background: -webkit-linear-gradient(315deg, var(--purpleblue) 25%, var(--yellow));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#description {
+    font-size: 25px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--purpleblue);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--purpleblue);
+}
+
+p {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--grey);
+}
+
+#btn {
+    background-color: var(--purpleblue);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: var(--lightblue);
+    padding: 15px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#btn:hover {
+    background-color: var(--darkpurpleblue);
+}
+
+#btn:active,
+#btn:focus {
+  box-shadow: 0 0 0 0.2rem var(--hoverborder);
+}
+
+#lower {
+    padding: 0 50px;
+}
+
+#safe-wrapper {
+    display: none;
+}
+
+#key-field {
+    border-radius: 8px;
+    border: 2px solid var(--purpleblue);
+    color: var(--purpleblue);
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#btn .fa {
+    margin-left: 10px;
+}
+
+#navbar {
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    border-bottom: 1px solid var(--darkgrey);
+    background: var(--darkergrey);
+}
+
+#nb-container {
+    display: flex;
+    justify-content: space-between; /* distribute items evenly */
+
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nb-content {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; /* 100% the remaining space */
+}
+
+#nb-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: var(--whitegrey);
+    text-decoration: none;
+    transition: 200ms;
+}
+
+#nb-item:hover {
+    color: white;
+}
